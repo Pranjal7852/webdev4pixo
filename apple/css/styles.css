@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+
+}
+.black {
+    color: black;
+}
+.white {
+    color: white;
+}
+.flex-cointainer {
+    display: flex;
+    flex-flow: row wrap;
+}
+.center-head {
+    justify-content: center;
+    padding: 0.5rem 0;
+    font-size: 13px;  
+}
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+    flex: 1;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+header h3 {
+    padding: 0.5rem 2rem;
+    font-size: 18px;  
+    color: rgb(206, 206, 206);
+}
+header h3:hover {
+    color: rgb(233, 233, 233);
+    text-shadow: 0 0 2px rgb(168, 168, 168);
+    transition-delay: 100ms;
+}
+/* HEADINGS */
+.covid {
+    background-color: #0071E3;
+    margin-top: 2.4rem;
+    
+}
+.covid a {
+    text-decoration: none;
+    color: white;
+    }
+ .covid a:hover {
+        text-decoration: underline;
+        color: white;
+        }
+.shop {
+    background-color: #fbfbfd;
+    color: #1d1d1f;;
+}
+.shop a {
+    text-decoration: none;
+    color: #0071E3;
+}
+.shop a:hover {
+    text-decoration: underline;
+}
+/* IPHONE BANNER */
+.flex-banner {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+.iphone12 {
+    height: 90vh;
+    background-image: url(".././images/iphone-12.webp");
+    background-repeat: no-repeat;
+    background-size: 60vw;
+    background-position: 50% 180%;
+    overflow: hidden;
+}
+span.heading {
+    font-size: 5rem;
+}
+span.desc {
+    font-size: 1rem;
+    color: grey;
+}
+span.tag {
+    font-size: 2rem;
+}
+span.heading {
+    font-size: 5rem;
+}

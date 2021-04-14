@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+header {
+   
+    height: 150px;
+    width: 100%;
+    padding: 2% 3%;
+    position: absolute;
+    top: 0px;
+}
+.brand-img {
+    display: inline-block;
+    background-image: url("../images/SpaceX_Logo_white.png");
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position-y: top;
+    width: 246px;
+    height: 34px;
+    
+}
+
+header ul, footer ul {
+    list-style: none;
+    }
+li.left {
+    float: left;
+    padding: 5px 18px;
+    margin-top: 15px;    
+}
+li.right {
+    float: right;
+}
+header a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+header a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 1px #fff;
+}
+/* back-1 */
+.back {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 13%;
+}
+section.right {
+    justify-content: flex-end;
+}
+section.left {
+    justify-content: flex-start;
+}
+/* BACKGROUND IMAGES */
+.banner-1{
+    background-image: url(".././images/back1.webp");
+}
+.banner-2{
+    background-image: url(".././images/back2.webp");
+    height: 500px;
+<<<<<<< HEAD
+    
+||||||| 0191fd7
+    background-attachment: fixed;
+=======
+>>>>>>> d87f5883c5dfa7896fc8de8c082b7f3314ff8e7f
+}
+.banner-3 {
+    background-image: url(".././images/back3.webp");
+    height: 450px;
+    
+}
+.banner-4 {
+    background-image: url(".././images/back4.webp"); 
+}
+/* content on back */
+.head h1 {
+    font-size: 40px;
+    text-shadow: 0 0 2px #000;
+    letter-spacing: 2px;
+}
+.head h3 {
+    font-weight: 100;
+    letter-spacing: 1px;
+    
+}
+/* BUTTON */
+.head button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 55px;
+}
+.head button:hover {
+    color: #000;
+    background-color: white;
+    transition-delay: 100ms;
+}
+.head button:focus {
+    outline: none;
+    border: 2px solid white;
+    
+}
+/* FOOTER */
+footer {
+    
+    
+}
+footer ul {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    padding: 2% 30%;
+}
+footer li {
+    float: left;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+/* MOBILE  */
+@media screen and (max-width: 410px) {
+    .banner-1 {
+        background-position: left;
+    }
+    .banner-2 {
+        background-position: center;
+    }
+
+    .head h1 {
+        font-size: 27px;
+    }
+    section.right {
+        align-items: flex-end;
+    }
+    section.left {
+        align-items: flex-end;
+    }
+    footer ul {
+        padding: 1% 2%;
+        font-size: 5px;
+        
+    }
+    footer li {
+        padding: 3px 5px;
+    }
+}

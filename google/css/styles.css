@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    margin-top: 15px;
+}
+header ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-right: 15px;
+}
+header li {
+    float: right;
+    
+}
+header a {
+    color: rgb(53, 53, 53);
+    font-size: 15px;
+    padding: 5px 15px;
+    width: 80px;
+    text-decoration: none;
+    
+}
+header a:hover {
+    text-decoration: underline;
+    
+}
+.user-img {
+    width: 30px;
+    border: 1px hidden darkgray;
+    border-radius: 15px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.459);
+}
+/* google image */
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+#google-image img {
+    width: 300px;
+}
+/* search text */
+.search input[type=text] {
+    width: 540px;
+    height: 40px;
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 20px;
+    background-image: url(.././search.png), url(../mic.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 8px 9px, 510px 7px;
+    background-size: 15px, 15px;
+    padding-inline-start: 33px;
+    padding-inline-end: 33px;
+    
+}
+.search input[type=text]:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.search input[type=text]:focus {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 20px;
+    background-image: url(.././search.png), url(../mic.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 8px 9px, 518px 7px;
+    background-size: 15px, 15px;
+    padding-inline-start: 33px;
+    outline: none;
+}
+/* buttons */
+button {
+    padding: 5px 10px;
+    border: none;
+    background-color: rgba(226, 226, 226, 0.479);
+}
+.lang {
+    font-size: 14px;
+} 
+.lang a{
+    color: navy;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+.lang a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+.parent {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.up {
+    border-bottom: 1px solid rgb(149, 149, 149);
+    
+}
+.footer-down {    
+    background-color: rgba(202, 202, 202, 0.514);
+    height: 30px;
+}
+.footer-down ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.footer-down .left {
+    float: left;
+} 
+.footer-down .right {
+    float: right;
+}
+.left a, .right a {
+    color: rgb(53, 53, 53);
+    font-size: 15px;
+    padding: 5px 15px;
+    width: 80px;
+    text-decoration: none;
+
+}
