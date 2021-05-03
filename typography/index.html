@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixonoid</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Typography</h1>
+    <div class="welcome">Welcome to</div>
+    <div class="pixonoid">
+      Pixonoid  
+    </div>
+
+</div>
+
+    <script>
+        // Background-Color
+        var rnd = 1;
+        function bgGradient(){
+            document.querySelector("body").style.backgroundImage = "linear-gradient("+rnd+"deg, #cc2b5e, #753a88)";
+            rnd+=5;
+        }
+        let timer = setInterval(bgGradient, 100);
+        // welcome Effect
+        
+        const text = document.querySelector(".welcome");
+        const strText = text.textContent;
+        const splitText = strText.split("");
+        text.textContent = "";
+        for (let i = 0; i < splitText.length; i++) {
+            text.innerHTML = text.innerHTML + "<span>" + splitText[i] + "</span>";
+        }
+        
+        var char = 0;
+        
+        function fade() {
+            
+            if(char === splitText.length) {
+                char = 0;
+            }
+            else {
+                var span = document.querySelectorAll("span")[char];
+            span.classList.toggle("fade");
+            char+=1;
+            }
+        }
+        let effect = setInterval(fade, 500);
+    </script>
+</body>
+</html>

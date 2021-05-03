@@ -22,22 +22,32 @@
         <img src="./images/10.png" class="layer" alt="">
         <img src="./images/11.png" class="layer" alt="">
         <img src="./images/12.png" class="layer" alt="">
-        <h1>Pixonoid</h1>
+        <h1 class="title">Pixonoid</h1>
         
         
         
     </section>
     <script type="text/javascript">
-    document.addEventListener("mousemove", parallax);
-    function parallax(e) {
-        this.querySelectorAll('.layer').array.forEach(element => {
-            const speed = layer.getAttribute('data-speed');
-            const x = (window.innerWidth - e.pageX*speed);
-            const y = (window.innerHeight - e.pageY*speed);
+    // document.addEventListener("mousemove", parallax);
+    // function parallax(e) {
+    //     this.querySelectorAll('.layer').array.forEach(element => {
+    //         const speed = layer.getAttribute('data-speed');
+    //         const x = (window.innerWidth - e.pageX*speed);
+    //         const y = (window.innerHeight - e.pageY*speed);
 
-            layer.style.transform = "translate(${x}px) translate(${y}px)";
-        });
-    }
+    //         layer.style.transform = "translate(${x}px) translate(${y}px)";
+    //     });
+    // }
+    var color = ["purple", "black", "pink", "red", "blue"]
+    
+    var rnd = 0;
+     function gradient() {
+            document.querySelector(".title").style.backgroundImage = "linear-gradient("+rnd+"deg, red, yellow)";
+        rnd+= 10;
+        console.log("angel is" + rnd);
+}
+      setInterval(gradient, 100);
+
     </script>
 </body>
 </html>
