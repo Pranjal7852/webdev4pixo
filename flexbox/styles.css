@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    font-size: 100px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 0 hsl(0, 0%, 1%);
+}
+.box1 {
+    background-color: rgb(233, 14, 14);
+}
+.box2 {
+    background-color: rgb(236, 156, 27);
+}
+.box3 {
+    background-color: rgb(230, 215, 15);
+}
+.box4 {
+    background-color: rgb(10, 214, 61);
+}
+.box5 {
+    background-color: rgb(27, 203, 216);
+}
+.box6 {
+    background-color: rgb(22, 19, 216);
+}
+.box7 {
+    background-color: rgb(210, 26, 216);
+}
+.box8 {
+    background-color: rgb(211, 12, 45);
+}
+.box9 {
+    background-color: rgb(13, 156, 192);
+}
+.box10 {
+    background-color: rgb(0, 158, 21);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+}
+.box {
+    width: 33.33%;
+}
