@@ -127,3 +127,47 @@ img.mascot {
          transform: rotate(0deg);
      }
  }
+ /* //mobile css */
+
+@media screen and (max-width: 410px) {
+    /* / */
+    .confirm{
+        width: 80vw;
+        text-align: center;
+    }
+    .confirm h2 {
+        font-size: 8vw;
+        white-space: normal;
+    }
+    .rotationDisc {
+        animation: rotation infinite linear 10s;
+        max-width: 300px;
+     }
+    .confirm button {
+        color: white;
+        border: none;
+        font-size: 2.5rem;
+        padding: 1vh 8vw;
+        background-color: rgba(0, 0, 0, 0.37);
+        border-radius: 30px;
+        opacity: 0.7;
+        transition: 200ms;
+        position: relative;
+        overflow: hidden;
+    }
+    .confirm button::after {
+        content: "Yes";
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    padding: 0.7vh 6.7vw;
+    border-radius: 30px;
+    top: 3%;
+    left: 4%;
+    cursor: pointer;
+    
+    }
+    img.mascot {
+        height: 60vh;
+        opacity: 0;
+    }
+}
