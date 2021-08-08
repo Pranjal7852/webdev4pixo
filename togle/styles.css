@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(33deg, #BC3D2F, #A16BFE);
+    font-family: 'Poppins', sans-serif;
+}
+.ball {
+    background-color: rgba(194, 194, 194, 0.603);
+    width: 30%;
+    height: 80%;
+    
+    border-radius: 40px;
+    position: absolute;
+    transform: translate(17%,13%);
+    transition: 2s;
+    }
+.on_state {
+    transform: translate(218%,13%);
+    transition: 3s;
+    background-color: rgba(0, 0, 0, 0.164);
+} 
+.back {
+    background-color: rgba(235, 230, 223, 0.199)!important;
+    transition: 2s;
+
+}   
+.toggle {
+    background-color: rgba(0, 0, 0, 0.062);
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 40px;
+    position: relative;
+    transition: 2s;
+    
+}
+.toggle::after {
+    content: attr(tool-tip);
+    position: absolute;
+    padding: 3em 1em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 1s;
+
+}
+.toggle:hover::after {
+    opacity: 1;
+    transition: 1s;
+}
