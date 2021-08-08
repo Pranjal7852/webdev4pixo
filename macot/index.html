@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixonoids Mascot</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main">
+        <div><img class="mascot" src="./Untitled-1.png" alt=""></div>
+    </div>
+    
+    <div class="confirm">
+        <img class="rotationDisc" src="./pixonoid.png" alt="pixonoids-logo-img">
+        <h2>Ready to see New Pixonoids Mascot</h2>
+        <button>Yes</button>
+    </div>
+    <script>
+        document.querySelector(".confirm button").addEventListener("click", function() {
+            document.querySelector(".confirm img").classList.add("fast");
+            document.querySelector(".confirm img").classList.remove("rotaionDisc");
+            document.querySelector(".confirm").classList.add("fade");
+            document.querySelector("img.mascot").classList.add("appear");
+            
+        })
+    </script>
+</body>
+</html>
