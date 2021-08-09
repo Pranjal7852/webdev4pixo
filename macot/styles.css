@@ -189,10 +189,13 @@ img.mascot {
  /* //mobile css */
 
 @media screen and (max-width: 410px) {
-    
+    body {
+        overflow:hidden;
+    }
     .confirm{
         width: 80vw;
         text-align: center;
+        overflow:hidden;
     }
     .confirm h2 {
         font-size: 8vw;
