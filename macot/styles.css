@@ -5,10 +5,49 @@
     box-sizing: border-box;
 }
 body {
-    /* overflow: hidden; */
     position: relative;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
+header {
+    display: flex;
+    position: absolute;
+    top: 1px;
+    color: white;
+    font-size: 2vw;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    padding: 1vh 3vw;
+    width: 100vw;
+   opacity: 0.9;
+    justify-content: space-between;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    
+    
+}
+header li {
+    padding: 5px 10px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    
+}
+header i {
+    transition: 500ms;
+}
+header i:hover {
+    opacity: 1;
+    transform: scale(1.3,1.3);
+    transition: 500ms;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.308);
+}
+
 
 .main {
     width: 100vw;
@@ -21,8 +60,9 @@ body {
     overflow: hidden;
 }
 img.mascot {
-    height: 80vh;
+    height: 70vh;
     opacity: 0;
+    margin-top: 1vh;
 }
 .appear {
     animation: enter 2s ease forwards 1s;
@@ -45,7 +85,6 @@ img.mascot {
     left: 50%;
     transform: translate(-50%,-50%);
     color: rgb(224, 224, 224);
-    z-index: 100;
     
 }
 .fade {
@@ -108,9 +147,18 @@ img.mascot {
 .confirm button:hover {
     opacity: 1;
 }
+.logo {
+    width: 300px;
+    height: auto;
+}
+.zoom {
+    transform: scale(10,10);
+    transition: 5s;
+}
 .rotationDisc {
     animation: rotation infinite linear 10s;
-    max-width: 200px;
+    width: 100%;
+    height: 100%;
  }
  .rotationDisc:hover {
      transform: scale(20,20);
@@ -127,10 +175,21 @@ img.mascot {
          transform: rotate(0deg);
      }
  }
+ /* footer */
+ footer {
+     text-align: center;
+     color: white;
+     position: absolute;
+     bottom: 2%;
+     left: 50%;
+     transform: translateX(-50%);
+     opacity: 0.7;
+     font-size: 1vw;
+ }
  /* //mobile css */
 
 @media screen and (max-width: 410px) {
-    /* / */
+    
     .confirm{
         width: 80vw;
         text-align: center;
@@ -146,8 +205,8 @@ img.mascot {
     .confirm button {
         color: white;
         border: none;
-        font-size: 2.5rem;
-        padding: 1vh 8vw;
+        font-size: 1.5rem;
+        padding: 0.8vh 8vw;
         background-color: rgba(0, 0, 0, 0.37);
         border-radius: 30px;
         opacity: 0.7;
@@ -169,5 +228,15 @@ img.mascot {
     img.mascot {
         height: 60vh;
         opacity: 0;
+    }
+    header {
+        font-size: 5vw;
+        
+    }
+    footer {
+        
+        opacity: 0.8;
+        font-size: 3.5vw;
+        white-space: nowrap;
     }
 }
