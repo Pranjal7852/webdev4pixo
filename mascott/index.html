@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixonoids Mascot</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./pixoblack.png">
     <script src="https://kit.fontawesome.com/84588adc24.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,7 +23,7 @@
         
         
     </header>
-    <div class="main">
+    <div id="particles-js" class="main">
         <div><img class="mascot" src="./Untitled-1.png" alt=""></div>
     </div>
     
@@ -37,13 +38,23 @@
     <footer>
         © Pixonoids 2021 | Some rights reserved
     </footer>
+    <script src="./particles/particles.js"></script>
     <script>
+        particlesJS.load('particles-js', './particles/particles.json', function() {
+         console.log('callback - particles.js config loaded');
+});
+
         document.querySelector(".confirm button").addEventListener("click", function() {
             document.querySelector(".confirm img").classList.add("fast");
             document.querySelector(".confirm img").classList.remove("rotaionDisc");
             document.querySelector(".logo").classList.add("zoom");
             document.querySelector(".confirm").classList.add("fade");
             document.querySelector("img.mascot").classList.add("appear");
+            setTimeout(function() {
+                document.querySelector(".confirm").classList.add("hide");
+            }, 2000);
+            
+
             
         })
     </script>

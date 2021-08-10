@@ -21,6 +21,8 @@ header {
     width: 100vw;
    opacity: 0.9;
     justify-content: space-between;
+    /* background-image: linear-gradient(33deg, #BC3D2F, #A16BFE); */
+    
 }
 header ul {
     list-style-type: none;
@@ -40,6 +42,8 @@ header a {
 }
 header i {
     transition: 500ms;
+    border-radius: 30px;
+    /* background-color: #9C28B0; */
 }
 header i:hover {
     opacity: 1;
@@ -47,12 +51,22 @@ header i:hover {
     transition: 500ms;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.308);
 }
+.fa-instagram:hover {
+    box-shadow: 0 0 15px 2px#9C2BB3;
+}
+.fa-github:hover {
+    box-shadow: 0 0 15px 2px #949494;
+}
+.fa-linkedin-in:hover {
+    box-shadow: 0 0 15px 2px #04BCD4;
+}
 
 
 .main {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(33deg, #121317, #323B42);
+    /* background-image: linear-gradient(33deg, #121317, #323B42); */
+    background-color: #121317;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,6 +77,10 @@ img.mascot {
     height: 70vh;
     opacity: 0;
     margin-top: 1vh;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
 }
 .appear {
     animation: enter 2s ease forwards 1s;
@@ -81,6 +99,7 @@ img.mascot {
     align-items: center;
     position: absolute;
     box-shadow: 0 0 40px 5px rgba(24, 24, 24, 0.5);
+    backdrop-filter: blur(2px);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -108,8 +127,9 @@ img.mascot {
     font-size: 1.5rem;
     padding: 2vh 3vw;
     background-color: rgba(0, 0, 0, 0.37);
+   
     border-radius: 30px;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: 200ms;
     position: relative;
     overflow: hidden;
@@ -147,6 +167,14 @@ img.mascot {
 .confirm button:hover {
     opacity: 1;
 }
+.hide {
+    display: none;
+}
+/* @keyframes hidden {
+    to {
+        display: hidden;
+    }
+} */
 .logo {
     width: 300px;
     height: auto;
