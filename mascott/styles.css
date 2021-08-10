@@ -235,7 +235,7 @@ img.mascot {
         color: white;
         border: none;
         font-size: 1.5rem;
-        padding: 0.8vh 8vw;
+        padding: 1.3vh 8vw;
         background-color: rgba(0, 0, 0, 0.37);
         border-radius: 30px;
         opacity: 0.7;
@@ -243,14 +243,17 @@ img.mascot {
         position: relative;
         overflow: hidden;
     }
+    .confirm button::before {
+        height: 350%;
+    }
     .confirm button::after {
         content: "Yes";
     position: absolute;
     background-color: rgb(31, 31, 31);
     padding: 0.7vh 6.7vw;
     border-radius: 30px;
-    top: 3%;
-    left: 4%;
+    top: 11%;
+    left: 5%;
     cursor: pointer;
     
     }
