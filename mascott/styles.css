@@ -133,12 +133,12 @@ img.mascot {
     overflow: hidden;
 }
 .confirm button::before {
-    width: 200%;
-    height: 250%;
+    width: 201%;
+    height: 350%;
     content: "";
     position: absolute;
-    top: -34%;
-    left: -52%;
+    top: -160%;
+    left: -48%;
     background: conic-gradient(#04BCD4, #9C2BB3, #FCEC3C);
     border-radius: 30px;
     animation: spin linear infinite 1s;
@@ -152,7 +152,7 @@ img.mascot {
     }
 }
 .confirm button::after {
-    content: "Yes";
+    content: "Unveil";
     position: absolute;
     background-color: rgb(31, 31, 31);
     padding: 1vh 2.7vw;
@@ -247,7 +247,7 @@ img.mascot {
         height: 350%;
     }
     .confirm button::after {
-        content: "Yes";
+        content: "Unveil";
     position: absolute;
     background-color: rgb(31, 31, 31);
     padding: 0.7vh 6.7vw;
