@@ -21,7 +21,6 @@ header {
     width: 100vw;
    opacity: 0.9;
     justify-content: space-between;
-    /* background-image: linear-gradient(33deg, #BC3D2F, #A16BFE); */
     
 }
 header ul {
@@ -98,8 +97,7 @@ img.mascot {
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    box-shadow: 0 0 40px 5px rgba(24, 24, 24, 0.5);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
